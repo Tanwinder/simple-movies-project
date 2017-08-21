@@ -1,0 +1,117 @@
+body{
+    margin:0;
+    padding: 0;
+    background: url("http://i252.photobucket.com/albums/hh20/esparza90/Celebrities/Wallpapers/light_textured_backround.jpg") no-repeat;
+    background-size: cover;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#imgBar{
+    padding:15px 0;
+    width:67%;
+    margin:0 auto;
+}
+#imgBar ul{
+    list-style-type: none;
+}
+#imgBar ul li{
+    display: inline-block;
+    margin: -2px;
+}
+#imgBar::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#imgBar ul li a img{
+    height:200px;
+    width:150px;
+    transition: width 1s,height 1s,transform 1s,box-shadow 1s;
+}
+#imgBar ul li a img:hover{
+    height:300px;
+    width:250px;
+    box-shadow:1px 15px 20px black;
+}
+.shiftNext{
+    transform: matrix(1, 0, -0.1, 0.9, 20, 0);
+    opacity:0.6;
+}
+.shiftPrev{
+    transform: matrix(1, 0, 0.1, 0.9, -20, 0);
+    opacity: 0.6;
+}
+#inputMovie{
+    width:400px;
+    margin:20px auto 10px auto;
+}
+#searchInput{
+    padding:4px 15px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    font-family: "Comic Sans MS";
+    font-size:1.2em;
+}
+.btn {
+    display: inline-block;
+    padding: 7px 12px;
+    margin-bottom: 8px;
+}
+#movieOuterDiv{
+    width: 71%;
+    margin:2px auto;
+    border:2px solid black;
+    padding:20px;
+    margin-bottom: 20px;
+    min-height:420px;
+    position: relative;
+}
+#moviePoster{
+    width:300px;
+    height:380px;
+    position: absolute;
+    box-shadow: 1px 1px 30px gray;
+    left:15px;
+    top:20px;
+}
+#movieDetail{
+    width: 60%;
+    margin:2px 5px;
+    border:2px solid gray;
+    padding:20px;
+    margin-bottom: 20px;
+    height:380px;
+    overflow: scroll;
+    position: absolute;
+    right:15px;
+    top:20px;
+}
+#movieDetail ul{
+    list-style-type: none;
+    margin:0 100px;
+}
+#movieDetail>span{
+    padding:12px;
+    margin: 5px 0;
+    background-color: forestgreen;
+    color: floralwhite;
+    font-family: "Comic Sans MS";
+    font-size: large;
+}
+#movieDetail>p{
+    padding: 35px;
+    margin:0;
+    font-family: sans-serif;
+}
+#movieName{
+    font-size: 2.7em;
+    padding:1px;
+    margin:0;
+    font-family: "Times New Roman";
+    font-style: oblique;
+
+}
